@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class AI : MonoBehaviour {
-
+	
 	// Use this for initialization
 	void Start () {
 	
@@ -10,6 +10,6 @@ public class AI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 }

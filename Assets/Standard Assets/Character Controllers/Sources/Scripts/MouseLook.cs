@@ -34,10 +34,10 @@ public class MouseLook : MonoBehaviour {
 	// 0 - MMO style 0 - default no mouse look; mouse look on right click
 	// 1 - MMO style 1 - default mouse look; interrupt/resume mouse look on certain keys (default: Left Alt & Escape)
 	// Will be read from PlayerPrefs
-	private int mouseLookStyle = 1;
+	private int mouseLookStyle = 0;
 	
 	// Mouse view flag - false if enabled;
-	private bool mouseViewActive = true;
+	private bool mouseViewActive = false;
 
 	void Update ()
 	{
