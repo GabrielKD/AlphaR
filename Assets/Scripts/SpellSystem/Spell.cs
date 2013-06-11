@@ -32,8 +32,8 @@ public abstract class Spell {
 	int baseGlobalCooldown = 1;
 	
 	// On Cooldown ? Flag set whether the 
-	bool isOnCoolDown { get; }
+	bool isOnCoolDown { get; set; }
 	
 	// Performs the actual casting
-	void castSpell();
+	public abstract void castSpell();
 }

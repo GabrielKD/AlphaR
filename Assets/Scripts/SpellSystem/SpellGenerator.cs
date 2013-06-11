@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Bolt {
+public class SpellGenerator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () 
@@ -12,6 +12,13 @@ public class Bolt {
 	// Update is called once per frame
 	void Update () 
 	{
+		
+	}
+	
+	public void createSpell (  )
+	{
+		// Spell spell = new Spell();
+		
 		
 	}
 }

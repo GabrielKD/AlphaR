@@ -43,7 +43,7 @@ public class MouseLook : MonoBehaviour {
 	{
 		establishMouseView();
 		
-		Debug.Log (mouseViewActive);
+		// Debug.Log (mouseViewActive);
 		if( mouseViewActive == true )
 		{
 			if( Screen.showCursor == true )

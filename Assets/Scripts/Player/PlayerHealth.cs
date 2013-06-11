@@ -16,21 +16,28 @@ public class PlayerHealth : MonoBehaviour {
 	public float currentHealthBarLength;
 	
 	// Healthbar Texture & Style
-	public Texture2D healthTexture = new Texture2D(512, 512);
-	public GUIStyle healthStyle = new GUIStyle();
+	public Texture2D healthTexture;
+	public GUIStyle healthStyle;
 	
 	// Healthbar text overlay texture
-	public Texture2D healthOverlayTexture = new Texture2D(128, 128);
-	public GUIStyle healthOverlayStyle = new GUIStyle();
-	public GUIStyle healthOverlayStyleOutline = new GUIStyle();
+	public Texture2D healthOverlayTexture;
+	public GUIStyle healthOverlayStyle;
+	public GUIStyle healthOverlayStyleOutline;
 	
 	// Use this for initialization
 	void Start () 
 	{
+		// Setting  Healthbar Texture & Style
+		healthStyle = new GUIStyle();
+		
+		// Setting  Healthbar text overlay texture
+		healthOverlayStyle = new GUIStyle();
+		healthOverlayStyleOutline = new GUIStyle();
+		
 		// Setting default health bar length
 		currentHealthBarLength = maxHealthBarLength = Screen.width / 3;
 		
-		// Setting texture for the health bar style (its backgroun)
+		// Setting texture for the health bar style (its background)
 		healthStyle.normal.background = healthTexture;
 		
 		// Setting texture and alignment for the text overlay
