@@ -7,6 +7,8 @@ public class SpellBook : MonoBehaviour
 	
 	public List<GameObject> spells = new List<GameObject>();
 	
+	public int ceva = 1245;
+	
 	// Use this for initialization
 	void Start () 
 	{
@@ -35,5 +37,10 @@ public class SpellBook : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
 	
+	}
+	
+	public int LeTest()
+	{
+		return ceva;
 	}
 }
